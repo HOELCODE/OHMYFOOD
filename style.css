@@ -7,8 +7,6 @@
 	box-sizing: border-box;
 }
 
-/* BODY */
-
 /* HEADER */
 
 .header_logo {
@@ -120,6 +118,7 @@
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 19px;
+	margin-left: 6%;
 }
 
 .fonctionaly_button {
@@ -127,7 +126,8 @@
 	align-items: center;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	margin-top: 3%;
+	margin-top: 8%;
+	width: 100%;
 }
 
 .fonctionaly_button .button {
@@ -137,8 +137,11 @@
 	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
 	background-color: #F7F7F7;
-	padding: 3%;
+	padding: 8%;
 	width: 100%;
+	position: relative;
+	z-index: -1;
+	right: 5px;
 }
 
 .fonctionaly_button .button i {
@@ -160,6 +163,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
+	left: 5px;
 }
 
 /*MAIN*/
@@ -193,22 +198,31 @@
 
 .card img {
 	min-width: 40%;
-	max-width: 80%;
+	max-width: 100%;
 	object-fit: cover;
 	display: flex;
 	justify-content: center;
 	align-self: center;
+	border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+	margin-bottom: 4%;
 }
 
-.main h2:first-child {
-	color: red;
+.card_titles {
+	display: flex;
+	flex-direction: column;
+	margin-left: 3%;
+	margin-right: 3%;
 }
 
 .card h2 {
-	font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
 	color: #000000;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+	margin-bottom: 2%;
 }
 
 .card h3 {
@@ -216,6 +230,13 @@
 	font-size: 17px;
 	line-height: 20px;
 	color: #000000;
+	color: #000000;
+	font-family: 'Roboto';
+	font-style: normal;
+}
+
+.card i {
+
 }
 
 /* FOOTER */
@@ -260,6 +281,3 @@ footer div i {
     line-height: 19px;
 }
 
-@media screen  {
-	
-}
