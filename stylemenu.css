@@ -1,0 +1,135 @@
+*
+{
+	font-family: 'Roboto';
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* BODY */
+
+.view {
+    width: 100%;
+}
+
+/* HEADER */
+
+.header_logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    padding: 3%;
+}
+
+.header_logo img {
+	width: 40%;
+}
+
+header img:nth-child(2) {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+
+/*MAIN*/
+
+.main_cards {
+    background-color: #F6F6F6;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    position: relative;
+    bottom: 55px ;
+}
+
+.header_main h1 {
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 41px;
+    color: #000000;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.card h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.card h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15.0431px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.card span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15.0431px;
+    line-height: 18px;
+    color: #000000;
+}
+/* FOOTER */
+
+footer {
+	background-color: #353535;
+	display: flex;
+	flex-direction: column;
+	padding: 3% 0 2% 4%;
+    margin-top: -55px;
+}
+footer h1 {
+	font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;  
+	color:#FFFFFF;
+	margin-bottom: 2%;
+	font-family: 'Shrikhand';
+}
+
+footer a {
+	text-decoration: none;
+}
+
+
+footer div a {
+	font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+	color: #FFFFFF;
+}
+
+footer div i {
+	color: #FFFFFF;
+	margin-right: 1%;
+}
+
+.footer_last_child {
+	color: #FFFFFF;
+	font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}

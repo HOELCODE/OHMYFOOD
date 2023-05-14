@@ -5,14 +5,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	box-shadow: 0 0 0 3px red inset;
 }
 
 /* BODY */
-
-
-
-
 
 /* HEADER */
 
@@ -49,6 +44,7 @@
 	width: 12px;
     height: 16px;
 }
+  /*RESERVATION*/
 
 .reservation  {
 	display: flex;
@@ -96,13 +92,12 @@
 	margin-bottom: 15%;
 }
 
+/*FONCTIONALY NAV*/
+
 .fonctionaly_nav h1 {
-	margin-left: 4%;
-	margin-top: 8%;
 	font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-
 }
 
 .fonctionaly_nav a {
@@ -112,10 +107,19 @@
 	flex-direction: row;
 }
 
+.fonctionaly_nav {
+	width: 100%;
+	padding: 7% 4% 14% 4%;
+}
 .fonctionaly_nav h2 {
 	font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
 }
 
 .fonctionaly_button {
@@ -126,7 +130,136 @@
 	margin-top: 3%;
 }
 
-.fonctionaly_button button {
+.fonctionaly_button .button {
 	display: flex;
 	flex-direction: row;
+	border: 0px solid;
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+	background-color: #F7F7F7;
+	padding: 3%;
+	width: 100%;
+}
+
+.fonctionaly_button .button i {
+	color: #7E7E7E;
+}
+
+.fonctionaly_button .num {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14.1818px;
+	line-height: 17px;
+	color: #FFFFFF;
+	border: 0px solid;
+	background-color: #9356DC;
+	border-radius: 20px;
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*MAIN*/
+
+.main {
+	background-color: #D2D2D2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 7% 4% 14% 4%;
+}
+
+.main a {
+	text-decoration: none;
+}
+
+.main h1 {
+	font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background-color: #FFFFFF;
+	margin-top: 4%;
+	border-radius: 15px;
+}
+
+.card img {
+	min-width: 40%;
+	max-width: 80%;
+	object-fit: cover;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
+.main h2:first-child {
+	color: red;
+}
+
+.card h2 {
+	font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+	color: #000000;
+}
+
+.card h3 {
+	font-weight: 300;
+	font-size: 17px;
+	line-height: 20px;
+	color: #000000;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: #353535;
+	display: flex;
+	flex-direction: column;
+	padding: 3% 0 2% 4%;
+}
+footer h1 {
+	font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;  
+	color:#FFFFFF;
+	margin-bottom: 2%;
+	font-family: 'Shrikhand';
+}
+
+footer a {
+	text-decoration: none;
+}
+
+
+footer div a {
+	font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+	color: #FFFFFF;
+}
+
+footer div i {
+	color: #FFFFFF;
+	margin-right: 1%;
+}
+
+.footer_last_child {
+	color: #FFFFFF;
+	font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+@media screen  {
+	
 }
