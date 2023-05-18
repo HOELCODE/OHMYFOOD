@@ -9,10 +9,6 @@
 
 /* BODY */
 
-.view {
-    width: 100%;
-}
-
 /* HEADER */
 
 .header_logo {
@@ -43,6 +39,13 @@ header img:nth-child(2) {
     bottom: 55px ;
 }
 
+.header_main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4% 10% 3% 6%;
+}
 .header_main h1 {
     font-family: 'Shrikhand';
     font-style: italic;
@@ -50,6 +53,11 @@ header img:nth-child(2) {
     font-size: 28px;
     line-height: 41px;
     color: #000000;
+}
+
+.header i {
+    width: 22px;
+    height: 21px; 
 }
 
 .card a {
@@ -98,7 +106,6 @@ footer {
 	display: flex;
 	flex-direction: column;
 	padding: 3% 0 2% 4%;
-    margin-top: -55px;
 }
 footer h1 {
 	font-style: italic;
@@ -132,4 +139,15 @@ footer div i {
 	font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+}
+
+.footer div:nth-of-type(2) {
+	margin-top: 2%;
+}
+.footer a:nth-of-type(1) {
+	margin-top:2%;
+}
+
+.footer a:nth-of-type(2) {
+	margin-top:2%;
 }
