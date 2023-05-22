@@ -39,13 +39,42 @@ header img:nth-child(2) {
     bottom: 55px ;
 }
 
+article {
+    padding: 2%;
+}
+
 .header_main {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 4% 10% 3% 6%;
+    padding: 4% 11% 3% 3%;
 }
+
+.button_order {
+	background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+	border: 0px solid;
+	width: 50%;
+	border-radius: 25px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+	padding: 3.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8%;
+    margin-top: 2%;
+}
+
+.order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header_main h1 {
     font-family: 'Shrikhand';
     font-style: italic;
@@ -64,6 +93,23 @@ header img:nth-child(2) {
     text-decoration: none;
 }
 
+.options {
+    border: 0px solid;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    border-radius: 15.0431px;
+    padding: 2%;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.details_line {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    justify-content: space-between;
+}
 .card h2 {
     font-family: 'Roboto';
     font-style: normal;
@@ -71,6 +117,8 @@ header img:nth-child(2) {
     font-size: 16px;
     line-height: 19px;
     color: #000000;
+    border-bottom: 1px solid #99E2D0;
+    width: 9%;
 }
 
 .card h3 {
@@ -99,6 +147,7 @@ header img:nth-child(2) {
     line-height: 18px;
     color: #000000;
 }
+
 /* FOOTER */
 
 footer {
@@ -106,6 +155,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	padding: 3% 0 2% 4%;
+    margin-top: -53px;
 }
 footer h1 {
 	font-style: italic;
@@ -120,7 +170,6 @@ footer h1 {
 footer a {
 	text-decoration: none;
 }
-
 
 footer div a {
 	font-weight: 500;
