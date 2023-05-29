@@ -13,13 +13,19 @@
 
 .header_logo {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
+    flex-direction: row-reverse;
     padding: 3%;
 }
 
+
 .header_logo img {
 	width: 40%;
+}
+
+.header_logo a {
+    margin-right: 25%;
 }
 
 header img:nth-child(2) {

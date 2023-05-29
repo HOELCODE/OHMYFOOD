@@ -73,6 +73,7 @@
 	margin-top: 4%; 
 }
 
+
 .reservation a {
 	margin-top: 5%;
 	background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -88,6 +89,7 @@
 	min-width: 60%;
 	max-width: 90%;
 	margin-bottom: 15%;
+	animation: shine 1s infinite;
 }
 
 /*FONCTIONALY NAV*/
@@ -322,3 +324,43 @@ footer div i {
 	margin-top:2%;
 }
 
+@media screen and (min-width:1280px) {
+	
+	.header_logo img {
+		width: 20%;
+	}
+    
+	.reservation {
+		flex-direction: column;
+	}
+
+	.reservation h1 {
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 47px;
+	}
+
+	.reservation h2 {
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 21px;
+	}
+
+	.reservation a {
+		border-radius: 25px;
+		width: 18%;
+		min-width: 0%;
+		padding: 1.5% 0.5% 1.5% 0.5%;
+	}
+    
+	.fonctionaly_nav {
+	    flex-direction: row;
+	}
+	.fonctionaly_button {
+		width: 25%;
+	}
+}
