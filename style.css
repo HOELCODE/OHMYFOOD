@@ -111,6 +111,7 @@
 	width: 100%;
 	padding: 7% 4% 14% 4%;
 }
+
 .fonctionaly_nav h2 {
 	font-weight: 500;
     font-size: 16px;
@@ -199,7 +200,7 @@
 }
 
 .card img {
-	max-width: 100%;
+	width: 100%;
 	object-fit: cover;
 	display: flex;
 	justify-content: center;
@@ -207,6 +208,7 @@
 	border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 	margin-bottom: 4%;
+	max-height: 230px;
 }
 
 .card_titles {
@@ -245,8 +247,12 @@
 	width: 100%;
 }
 
-.card_infos i {
-	margin-top: 2%;
+.card:nth-child(2) .card_titles {
+	padding-bottom: 6%;
+}
+
+.card_infos i:active, .card_infos i:focus {
+	background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
 .span_new {
@@ -324,7 +330,7 @@ footer div i {
 	margin-top:2%;
 }
 
-@media screen and (min-width:1180px) {
+@media screen and (min-width:800px) {
 	
 	.header_logo img {
 		width: 20%;
@@ -381,7 +387,7 @@ footer div i {
 	}
 
 	.fonctionaly_nav h1 {
-		margin-left: 3%;
+		margin-left: 10%;
 		font-family: 'Roboto';
 		font-style: normal;
 		font-weight: 700;

@@ -15,6 +15,10 @@
     margin-right: 30%;
 }
 
+.header_logo i {
+	color: black;
+}
+
 .header_logo {
     display: flex;
     justify-content: space-between;
@@ -25,6 +29,11 @@
 
 .header_logo a {
     margin-right: 25%;
+}
+
+
+.header_main i:active, .header_main i:focus {
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
 header img:nth-child(2) {
@@ -152,6 +161,12 @@ article {
     line-height: 18px;
     color: #000000;
 }
+
+.taboun {
+    display: none;
+}
+
+
 
 /* FOOTER */
 
@@ -305,7 +320,7 @@ footer div i {
     
     .header_main {
         padding: 4% 0% 3% 0%;
-        width: 25%;
+        width: 30%;
     }
 
 }
