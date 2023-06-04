@@ -247,12 +247,18 @@
 	width: 100%;
 }
 
-.card:nth-child(2) .card_titles {
-	padding-bottom: 6%;
+.card_infos i {
+    font-weight: 400;
+    color: black;
 }
 
-.card_infos i:active, .card_infos i:focus {
-	background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+.card_infos i:hover  {
+    font-weight: 700;
+    color: #FF79DA;
+}
+
+.card:nth-child(2) .card_titles {
+	padding-bottom: 6%;
 }
 
 .span_new {
@@ -285,6 +291,7 @@ footer {
 	flex-direction: column;
 	padding: 3% 0 2% 4%;
 }
+
 footer h1 {
 	font-style: italic;
     font-weight: 400;
@@ -437,7 +444,10 @@ footer div i {
 
 	.card_infos {
 	   padding-top: 2%;
-       padding-bottom: 6%;
+	}
+
+    .main_section .card:nth-child(2) .card_infos {
+		margin-bottom: -13%;
 	}
     
 	.card_titles h2 {

@@ -31,9 +31,14 @@
     margin-right: 25%;
 }
 
+.header_main i {
+    font-weight: 400;
+    color: black;
+}
 
-.header_main i:active, .header_main i:focus {
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+.header_main i:hover {
+    font-weight: 700;
+    color: #FF79DA;
 }
 
 header img:nth-child(2) {
@@ -162,8 +167,19 @@ article {
     color: #000000;
 }
 
+
+
 .taboun {
-    display: none;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: left 5s ease;
+    position: absolute;
+}
+
+.taboun:hover {
+    left: 100%;
 }
 
 
