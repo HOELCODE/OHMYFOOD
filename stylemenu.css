@@ -50,6 +50,37 @@ header img:nth-child(2) {
 
 /*MAIN*/
 
+.bloque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #99E2D0;
+    border-radius: 0px 15px 15px 0px;
+    width: 0%;
+    transition: width 1s ease-out;
+}
+
+.bloque i {
+    color: #FFFFFF;
+    transition: opacity 0.1s 0.1s ease;
+    opacity: 0;
+}
+
+a:hover .bloque {
+    width: 100%;
+}
+
+a:hover i {
+    opacity: 1;
+}
+
+.price_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 30%;
+}
+
 .main_cards {
     background-color: #F6F6F6;
     border-top-left-radius: 35px;
@@ -59,7 +90,10 @@ header img:nth-child(2) {
 }
 
 article {
-    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header_main {
@@ -101,6 +135,7 @@ article {
     font-size: 28px;
     line-height: 41px;
     color: #000000;
+    margin-left: 5%;
 }
 
 .header i {
@@ -110,6 +145,12 @@ article {
 
 .card a {
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    width: 95%;
+    margin-bottom: 5%;
+    /*On met le padding qui correspond au margin retiré*/
 }
 
 .options {
@@ -117,18 +158,20 @@ article {
     background-color: #FFFFFF;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border-radius: 15.0431px;
-    padding: 2%;
-    width: 100%;
-    margin-top: 2%;
-    margin-bottom: 4%;
+    width: 95%;
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+/*On supprime les margin*/
 }
 
 .details_line {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 1%;
-    justify-content: space-between;
 }
+
 .card h2 {
     font-family: 'Roboto';
     font-style: normal;
@@ -136,8 +179,11 @@ article {
     font-size: 16px;
     line-height: 19px;
     color: #000000;
-    border-bottom: 1px solid #99E2D0;
+    border-bottom: 2px solid #99E2D0;
     width: 9%;
+    margin-bottom: 2%;
+    align-self: flex-start;
+    margin-left: 5%;
 }
 
 .card h3 {
@@ -147,6 +193,9 @@ article {
     font-size: 18px;
     line-height: 21px;
     color: #000000;
+    margin-top: 4%;
+    margin-left: 6%;
+    width: 100%;
 }
 
 .card h4 {
@@ -156,6 +205,10 @@ article {
     font-size: 15.0431px;
     line-height: 18px;
     color: #000000;
+    margin-top: 4%;
+    margin-left: 6%;
+    width: 100%;
+    margin-bottom: 6%;
 }
 
 .card span {
@@ -165,24 +218,9 @@ article {
     font-size: 15.0431px;
     line-height: 18px;
     color: #000000;
+    margin-top: 40%;
+    margin-right: 20%;
 }
-
-
-
-.taboun {
-    border: 1px solid black;
-    width: 100px;
-    height: 100px;
-    background-color: green;
-    transition: left 5s ease;
-    position: absolute;
-}
-
-.taboun:hover {
-    left: 100%;
-}
-
-
 
 /* FOOTER */
 
