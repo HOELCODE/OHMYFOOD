@@ -32,7 +32,7 @@
     margin-right: 25%;
 }
 
-.header_main i {
+/*.header_main i {
     font-weight: 400;
     color: black;
     
@@ -41,8 +41,9 @@
 .header_main i:active ,.header_main i:focus {
     font-weight: 700;
     color: #FF79DA;
-    animation-duration: 5s;
+    animation-timing-function: 5s;
 }
+*/
 
 header img:nth-child(2) {
     width: 100%;
@@ -51,6 +52,31 @@ header img:nth-child(2) {
     z-index: -1;
 }
 
+@keyframes highlight {
+    from {
+      /* État initial */
+      font-weight: 400;
+      color: black;
+    }
+    to {
+      /* État final après 5 secondes */
+      font-weight: 700;
+      color: #FF79DA;
+    }
+  }
+
+.header_main i {
+    font-weight: 400;
+    color: black;
+}
+  
+.header_main i:hover {
+    font-weight: 700;
+    color: #FF79DA;
+    animation-name: highlight;
+    animation-timing-function: 10s;
+}
+  
 /*MAIN*/
 
 .bloque {
@@ -219,6 +245,7 @@ article {
     margin-top: 4%;
     margin-left: 6%;
     width: 100%;
+    overflow: hidden;
 }
 
 .card h4 {
@@ -389,7 +416,10 @@ footer div i {
         height: 100%;
         margin-left: 84%;
     }
-
+    
+    .card h2 {
+        width: 6%;
+    }
     .card h3 {
         font-family: 'Roboto';
         font-style: normal;
