@@ -5,6 +5,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+    /*box-shadow:  0 0 0 3px red inset;*/
 }
 
 /* HEADER */
@@ -34,11 +35,13 @@
 .header_main i {
     font-weight: 400;
     color: black;
+    
 }
 
-.header_main i:hover {
+.header_main i:active ,.header_main i:focus {
     font-weight: 700;
     color: #FF79DA;
+    animation-duration: 5s;
 }
 
 header img:nth-child(2) {
@@ -58,11 +61,21 @@ header img:nth-child(2) {
     border-radius: 0px 15px 15px 0px;
     width: 0%;
     transition: width 0.7s;
+    z-index: 3;
+}
+
+.price {
+    background: #FFFFFF;
+    display: flex;
+    padding-top: 48%;
+    padding-right: 15%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .bloque i {
     color: #FFFFFF;
-    transition: opacity 0.1s 0.15s ease-out;
+    transition: opacity 0.1s 0.15s;
     opacity: 0;
 }
 
@@ -78,7 +91,11 @@ a:hover i {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    width: 30%;
+    width: 34%;
+    Z-INDEX: 2;
+    position: absolute;
+    height: 100%;
+    margin-left: 66%;
 }
 
 .main_cards {
@@ -94,6 +111,7 @@ article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 0 0 4%;
 }
 
 .header_main {
@@ -120,6 +138,12 @@ article {
     align-items: center;
     margin-bottom: 8%;
     margin-top: 2%;
+    transition: opacity 1s;
+    opacity: 1;
+}
+
+.button_order:hover {
+  opacity: 0.5;
 }
 
 .order {
@@ -135,7 +159,7 @@ article {
     font-size: 28px;
     line-height: 41px;
     color: #000000;
-    margin-left: 5%;
+    margin-left: 2%;
 }
 
 .header i {
@@ -147,10 +171,8 @@ article {
     text-decoration: none;
     display: flex;
     flex-direction: row;
-    margin-left: 5%;
-    width: 95%;
+    width: 100%;
     margin-bottom: 5%;
-    /*On met le padding qui correspond au margin retiré*/
 }
 
 .options {
@@ -163,13 +185,15 @@ article {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-/*On supprime les margin*/
+    z-index: 0;
 }
 
 .details_line {
     display: flex;
     flex-direction: column;
     margin-top: 1%;
+    width: 85%;
+    Z-INDEX: 1;
 }
 
 .card h2 {
@@ -181,9 +205,8 @@ article {
     color: #000000;
     border-bottom: 2px solid #99E2D0;
     width: 9%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
     align-self: flex-start;
-    margin-left: 5%;
 }
 
 .card h3 {
@@ -218,8 +241,7 @@ article {
     font-size: 15.0431px;
     line-height: 18px;
     color: #000000;
-    margin-top: 40%;
-    margin-right: 20%;
+    background: #FFFFFF;
 }
 
 /* FOOTER */
@@ -320,6 +342,76 @@ footer div i {
 
     .order {
         width: 25%;
+        margin-bottom: 2%;
+    }
+
+    .bloque {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #99E2D0;
+        border-radius: 0px 15px 15px 0px;
+        width: 0%;
+        transition: width 0.7s;
+        z-index: 3;
+    }
+    
+    .price {
+        background: #FFFFFF;
+        display: flex;
+        padding-top: 35%;
+        padding-right: 15%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    
+    .bloque i {
+        color: #FFFFFF;
+        transition: opacity 0.1s 0.15s;
+        opacity: 0;
+    }
+    
+    a:hover .bloque {
+        width: 100%;
+    }
+    
+    a:hover i {
+        opacity: 1;
+    }
+    
+    .price_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        width: 16%;
+        Z-INDEX: 2;
+        position: absolute;
+        height: 100%;
+        margin-left: 84%;
+    }
+
+    .card h3 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        margin-top: 1%;
+        margin-left: 3%;
+        width: 100%;
+    }
+
+    .card h4 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15.0431px;
+        line-height: 18px;
+        color: #000000;
+        margin-top: 1%;
+        margin-left: 3%;
+        width: 100%;
         margin-bottom: 2%;
     }
 

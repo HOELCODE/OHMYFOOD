@@ -90,6 +90,12 @@
 	max-width: 90%;
 	margin-bottom: 15%;
 	animation: shine 1s infinite;
+	transition: opacity 1s;
+    opacity: 1;
+}
+
+.reservation a:hover {
+opacity: 0.5;
 }
 
 /*FONCTIONALY NAV*/
