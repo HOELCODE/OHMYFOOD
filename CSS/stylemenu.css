@@ -220,6 +220,9 @@ article {
     margin-top: 1%;
     width: 85%;
     Z-INDEX: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .card h2 {
@@ -246,6 +249,8 @@ article {
     margin-left: 6%;
     width: 100%;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .card h4 {
@@ -259,6 +264,9 @@ article {
     margin-left: 6%;
     width: 100%;
     margin-bottom: 6%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .card span {
@@ -324,7 +332,7 @@ footer div i {
 	margin-top:2%;
 }
 
-@media screen and (min-width:1180px) {
+@media screen and (min-width:720px) {
     
     .header_logo img {
         width: 20%;
