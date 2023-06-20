@@ -7,6 +7,103 @@
 	box-sizing: border-box;
     /*box-shadow:  0 0 0 3px red inset;*/
 }
+/*test*/
+
+.meal {
+    display: flex;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .421);
+    border-radius: .625rem;
+    cursor: pointer;
+    overflow: hidden;
+    animation: appear 1s both;
+    height: 90px;
+    width: 96%;
+}
+
+.meal:nth-child(2) {
+    animation-delay: 200ms
+}
+
+.meal:nth-child(3) {
+    animation-delay: 300ms
+}
+
+.meal:nth-child(4) {
+    animation-delay: 400ms
+}
+
+.meal:nth-child(5) {
+    animation-delay: 500ms
+}
+
+.meal__description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 6%;
+    margin-bottom: 2%;
+}
+
+.meal__description h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-bottom: 7%;
+    margin-top: 8%;
+}
+
+.meal__description p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    color: #000000;
+}
+
+.meal__price {
+    font-weight: 500;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    margin-left: auto;
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: .625rem 1.5625rem .625rem .3125rem;
+    color: #000000;
+    margin-right: 5%;
+}
+
+.meal__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -96px;
+    width: 65px;
+    padding: 0 .9375rem;
+    background-color: #99e2d0;
+    transition: margin-right .4s ease-in-out
+}
+
+.meal__check::after {
+    content: "";
+    font-family: "FontAwesome";
+    padding: .3125rem;
+    border-radius: 50%;
+    color: #99e2d0;
+    font-size: .9375rem;
+    background-color: #fff;
+    transition: transform .4s ease-in-out
+}
+
+.meal:hover .meal__check,
+.meal:focus .meal__check {
+    margin-right: 0
+}
 
 /*CARD TRANSITION*/
 
@@ -216,7 +313,6 @@ article {
 
 .card a {
     text-decoration: none;
-    display: flex;
     flex-direction: row;
     width: 100%;
     margin-bottom: 5%;
@@ -259,7 +355,7 @@ article {
     align-self: flex-start;
 }
 
-.card h3 {
+/*.card h3 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -288,7 +384,7 @@ article {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-}
+}*/
 
 .card span {
     font-family: 'Roboto';
@@ -389,11 +485,43 @@ footer div i {
     }
 
     article {
-        width: 60%;
+        width: 80%;
     }
 
+    .meal__description {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-left: 6%;
+        margin-bottom: 2%;
+    }
+    
+    .meal__description h4 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        margin-bottom: 7%;
+        margin-top: 8%;
+    }
+    
+    .meal__description p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        color: #000000;
+    }
+    
+
     .button_order {
-        padding: 5% 6% 5% 6%;
+        padding: 7% 10% 7% 10%;
+        WIDTH: 70%;
     }
 
     .order {
@@ -433,45 +561,6 @@ footer div i {
     
     a:hover i {
         opacity: 1;
-    }
-    
-    .price_container {
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        width: 16%;
-        Z-INDEX: 2;
-        position: absolute;
-        height: 100%;
-        margin-left: 84%;
-    }
-    
-    .card h2 {
-        width: 6%;
-    }
-    .card h3 {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 21px;
-        color: #000000;
-        margin-top: 1%;
-        margin-left: 3%;
-        width: 100%;
-    }
-
-    .card h4 {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 15.0431px;
-        line-height: 18px;
-        color: #000000;
-        margin-top: 1%;
-        margin-left: 3%;
-        width: 100%;
-        margin-bottom: 2%;
     }
 
     /*FOOTER*/
