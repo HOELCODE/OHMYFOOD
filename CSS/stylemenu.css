@@ -32,19 +32,6 @@
     margin-right: 25%;
 }
 
-/*.header_main i {
-    font-weight: 400;
-    color: black;
-    
-}
-
-.header_main i:active ,.header_main i:focus {
-    font-weight: 700;
-    color: #FF79DA;
-    animation-timing-function: 5s;
-}
-*/
-
 header img:nth-child(2) {
     width: 100%;
     object-fit: cover;
@@ -52,14 +39,42 @@ header img:nth-child(2) {
     z-index: -1;
 }
 
-@keyframes highlight {
+.heart {
+	position: relative;
+    margin-bottom: 4%;
+}
+  
+.heart :nth-child(1) {
+	font-weight: 400;
+	color: black;
+	position: absolute;
+	inset: 0;
+	transition: opacity 3s;
+}
+  
+.heart :nth-child(2) {
+	font-weight: 700;
+	color: #FF79DA;
+	position: absolute;
+	inset: 0;
+	opacity: 0;
+	transition: opacity 2s;
+}
+  
+.heart:hover i:nth-child(1) {
+	opacity: 0;
+}
+  
+.heart i:nth-child(2):hover {
+	opacity: 1;
+}
+
+/*@keyframes highlight {
     from {
-      /* État initial */
       font-weight: 400;
       color: black;
     }
     to {
-      /* État final après 5 secondes */
       font-weight: 700;
       color: #FF79DA;
     }
@@ -74,8 +89,7 @@ header img:nth-child(2) {
     font-weight: 700;
     color: #FF79DA;
     animation-name: highlight;
-    /*animation-timing-function: 10s;*/
-}
+}*/
   
 /*MAIN*/
 

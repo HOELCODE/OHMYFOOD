@@ -13,7 +13,7 @@
 	position: fixed;
 	display: grid;
 	place-items: center;
-	animation: opacité 200ms 4s forwards;
+	animation: opacité 200ms 2s forwards;
 	transform-origin: top;
 	z-index: 1;
 	height: 100vh;
@@ -23,7 +23,7 @@
 }
 
 .loader > i:first-child {
-	animation: spin 4s infinite linear;
+	animation: spin 2s infinite linear;
 	color: #9356DC;
 }
 
@@ -281,30 +281,44 @@ opacity: 0.5;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding-right: 4%;
-	padding-bottom: 3%;
+	padding-right: 8%;
+	padding-bottom: 4%;
 	width: 100%;
 }
 
+.main .card:nth-child(2) .card_infos {
+	padding-bottom: 10%;
+}
+
+.heart {
+	position: relative;
+}
+  
 .heart :nth-child(1) {
-    font-weight: 700;
-    color: black;
-}
-
-.heart :nth-child(2) {
 	font-weight: 400;
-	color: red;
+	color: black;
+	position: absolute;
+	inset: 0;
+	transition: opacity 3s;
 }
-
-.heart i:nth-child(1):hover  {
+  
+.heart :nth-child(2) {
+	font-weight: 700;
+	color: #FF79DA;
+	position: absolute;
+	inset: 0;
 	opacity: 0;
-    font-weight: 700;
+	transition: opacity 2s;
 }
-
-.card:nth-child(2) .card_titles {
-	padding-bottom: 6%;
+  
+.heart:hover i:nth-child(1) {
+	opacity: 0;
 }
-
+  
+.heart i:nth-child(2):hover {
+	opacity: 1;
+}
+  
 .span_new {
 	color: #008766;
 	background: #99E2D0;
