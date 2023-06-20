@@ -8,6 +8,35 @@
     /*box-shadow:  0 0 0 3px red inset;*/
 }
 
+/*CARD TRANSITION*/
+
+.main_cards .card:nth-of-type(1) {
+    animation: opacity 2s forwards;
+    opacity: 0;
+    animation-delay: 0s;
+}
+
+.main_cards .card:nth-of-type(2) {
+    animation: opacity 2s forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+.main_cards .card:nth-of-type(3) {
+    animation: opacity 2s forwards;
+    opacity: 0;
+    animation-delay: 2s;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* HEADER */
 
 
@@ -68,28 +97,6 @@ header img:nth-child(2) {
 .heart i:nth-child(2):hover {
 	opacity: 1;
 }
-
-/*@keyframes highlight {
-    from {
-      font-weight: 400;
-      color: black;
-    }
-    to {
-      font-weight: 700;
-      color: #FF79DA;
-    }
-  }
-
-.header_main i {
-    font-weight: 400;
-    color: black;
-}
-  
-.header_main i:hover {
-    font-weight: 700;
-    color: #FF79DA;
-    animation-name: highlight;
-}*/
   
 /*MAIN*/
 
