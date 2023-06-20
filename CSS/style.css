@@ -7,6 +7,39 @@
 	box-sizing: border-box;
 }
 
+/* LOADER*/
+
+.loader {
+	position: fixed;
+	display: grid;
+	place-items: center;
+	animation: opacité 200ms 4s forwards;
+	transform-origin: top;
+	z-index: 1;
+	height: 100vh;
+	inset: 0;
+	opacity: 1;
+	background-color: white;
+}
+
+.loader > i:first-child {
+	animation: spin 4s infinite linear;
+	color: #9356DC;
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(300deg);
+	}
+}
+
+@keyframes opacité {
+	100% {
+		scale: 0;
+	}
+}
+
+
 /* HEADER */
 
 .header_logo {
@@ -253,14 +286,19 @@ opacity: 0.5;
 	width: 100%;
 }
 
-.card_infos i {
-    font-weight: 400;
+.heart :nth-child(1) {
+    font-weight: 700;
     color: black;
 }
 
-.card_infos i:hover  {
+.heart :nth-child(2) {
+	font-weight: 400;
+	color: red;
+}
+
+.heart i:nth-child(1):hover  {
+	opacity: 0;
     font-weight: 700;
-    color: #FF79DA;
 }
 
 .card:nth-child(2) .card_titles {
