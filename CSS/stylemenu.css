@@ -40,8 +40,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 6%;
-    margin-bottom: 2%;
+    padding: 4% 2% 4% 2%;
 }
 
 .meal__description h4 {
@@ -54,7 +53,6 @@
     line-height: 21px;
     color: #000000;
     margin-bottom: 7%;
-    margin-top: 8%;
 }
 
 .meal__description p {
@@ -68,7 +66,6 @@
 
 .meal__price {
     font-weight: 500;
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
     margin-left: auto;
     flex-shrink: 0;
     display: flex;
@@ -492,8 +489,7 @@ footer div i {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        margin-left: 6%;
-        margin-bottom: 2%;
+        padding: 3% 2% 0% 2%;
     }
     
     .meal__description h4 {
@@ -505,8 +501,6 @@ footer div i {
         font-size: 18px;
         line-height: 21px;
         color: #000000;
-        margin-bottom: 7%;
-        margin-top: 8%;
     }
     
     .meal__description p {
